@@ -5,3 +5,4 @@ for i in range(00, 100):
     print("{}".format(i), end="")
     if i != 99:
         print(", ", end="")
+("\n")
