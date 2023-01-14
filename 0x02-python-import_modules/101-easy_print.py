@@ -1,3 +1,4 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    input("#pythoniscool\n")
+    from builtins import print
+    print("#pythoniscool\n", end='')
