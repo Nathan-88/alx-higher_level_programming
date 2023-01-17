@@ -4,7 +4,7 @@ def uniq_add(my_list=[]):
     res_list = []
     for item in my_list:
         if item not in res_list:
-            res_list.append(item) 
+            res_list.append(item)
 
     for i in res_list:
         sum_ += i
