@@ -1,15 +1,13 @@
- #!/usr/bin/python3
- """ defines a square """
-
+#!/usr/bin/python3
+"""defining a class"""
 
 class Square:
     """ square with private instance attribute size"""
 
-def __init__(self, size=0):
-        """
+    def __init__(self, size=0):
+        """i
         Args:
             __size (int): size of side of the square
-        Return: None
         """
         self.__size = size
         if isinstance(self.__size, int) == False:
