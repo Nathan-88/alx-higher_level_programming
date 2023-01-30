@@ -21,4 +21,3 @@ class Square:
             square Area
         """
         return self.__size ** 2
-
