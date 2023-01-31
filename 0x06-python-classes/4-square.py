@@ -8,9 +8,9 @@ class Square:
         __size (int): size of a side of the square
     """
     def __init__(self, size=0):
-        """initializer of class square
+        """initializes the square
         Args:
-            size (int): size of square
+            size (int): the size of square
         """
         self.size = size
 
@@ -18,7 +18,7 @@ class Square:
     def size(self):
         """getter for size of square
         Returns:
-            private instance
+            the size of square
         """
         return self.__size
 
@@ -26,7 +26,7 @@ class Square:
     def size(self, value):
         """setter
         Args:
-            value(int):new size of square
+            value (int):new size of square
         """
         if isinstance(value, int) is False:
             raise TypeError("size must be a integer")
