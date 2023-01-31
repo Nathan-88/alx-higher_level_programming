@@ -18,7 +18,8 @@ class Square:
     @property
     def size(self):
         """getter for size of square
-        Returns: private instance
+        Returns:
+            private instance
         """
         return self.__size
 
