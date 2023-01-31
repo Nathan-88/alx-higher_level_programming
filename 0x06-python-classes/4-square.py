@@ -3,17 +3,16 @@
 
 
 class Square:
-    """ class square
+    """ Represent square
     Attributes:
         __size (int): size of a side of the square
     """
-
     def __init__(self, size=0):
         """initializer of class square
         Args:
-            size: size of square
+            size (int): size of square
         """
-        self.__size = size
+        self.size = size
 
     @property
     def size(self):
