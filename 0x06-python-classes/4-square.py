@@ -4,11 +4,13 @@
 
 class Square:
     """ Represent square
+
     Attributes:
         __size (int): size of a side of the square
     """
     def __init__(self, size=0):
         """initializes the square
+
         Args:
             size (int): the size of square
         """
@@ -17,6 +19,7 @@ class Square:
     @property
     def size(self):
         """getter for size of square
+
         Returns:
             the size of square
         """
@@ -25,6 +28,7 @@ class Square:
     @size.setter
     def size(self, value):
         """setter
+
         Args:
             value (int):new size of square
         """
