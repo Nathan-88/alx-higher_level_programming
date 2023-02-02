@@ -11,6 +11,7 @@ class Rectangle:
         Args:
             width: width of the rectangle
             height: heigth of the rectangle
+            .number_of_instances: increments when a new instance is created
         """
         self.width = width
         self.height = height
@@ -69,6 +70,8 @@ class Rectangle:
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
-        """runs when object is deleted"""
+        """runs when object is deleted
+        .number_of_instances: decrements each time an instance is delected
+        """
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
