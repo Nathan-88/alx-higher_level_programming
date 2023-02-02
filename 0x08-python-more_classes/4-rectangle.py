@@ -63,5 +63,5 @@ class Rectangle:
         return '\n'.join('#' * self.__width for i in range(self.__height))
 
     def __repr__(self):
-        """defines an ambigious string representation of an object"""
+        """defines an unambigious string representation of an object"""
         return "Rectangle({}, {})".format(self.__width, self.__height)
