@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Defines a class square"""
 
 
 class Square:
@@ -15,7 +16,10 @@ class Square:
 
     @property
     def size(self):
-        """getter for size of square"""
+        """getter for size of square
+        Returns:
+            self.__size
+        """
         return self.__size
 
     @size.setter
@@ -32,7 +36,8 @@ class Square:
 
     @property
     def position(self):
-        """getter for position"""
+        """getter for position
+        """
         return self.__position
 
     @position.setter
