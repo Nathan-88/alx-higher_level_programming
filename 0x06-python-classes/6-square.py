@@ -8,26 +8,20 @@ class Square:
     def __init__(self, size=0, position=(0, 0)):
         """initializer for sqaure
         Args:
-            size: size of square
-            position: position of square
+            size (int): size of square
+            position (int, int): position of square
         """
         self.size = size
         self.position = position
 
     @property
     def size(self):
-        """getter for size of square
-        Returns:
-            self.__size
-        """
+        """getter for size of square"""
         return self.__size
 
     @size.setter
     def size(self, value):
-        """setter for size
-        Args:
-            value (int): size of side of square
-        """
+        """setter for size"""
         if isinstance(value, int) is False:
             raise TypeError("size must be an integer")
         if value < 0:
@@ -36,16 +30,12 @@ class Square:
 
     @property
     def position(self):
-        """getter for position
-        """
+        """getter for position"""
         return self.__position
 
     @position.setter
     def position(self, value):
-        """setter for position
-        Args:
-            value (tuple) : position of square
-        """
+        """setter for position"""
         if not isinstance(value, tuple) or len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
         if not all(isinstance(i, int) or i > 0 for i in value):
@@ -53,10 +43,7 @@ class Square:
         self.__position = value
 
     def area(self):
-        """ area of the square
-        Returns:
-            square of size
-        """
+        """ Return area of the square"""
         return (self.__size ** 2)
 
     def my_print(self):
