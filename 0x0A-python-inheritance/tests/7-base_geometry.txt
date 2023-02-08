@@ -33,7 +33,6 @@ checking for area failurea:
 	Exception: area() is not implemented
 
 checking for integer validator:
-	>>> b = BaseGeometry()
 	>>> b.integer_validator("integer", 1)
 
 checking for value not int:
@@ -42,5 +41,8 @@ checking for value not int:
 	...
 	TypeError: integer must be an integer
 
-checking for value = 0:
-	 
+Checking for integer < 0;
+	 >>> b.integer_validator("integer", -5)
+	 Traceback (most recent call last):
+         ...
+         ValueError: integer must be greater than 0
