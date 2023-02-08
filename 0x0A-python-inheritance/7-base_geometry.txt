@@ -25,3 +25,22 @@ checking for method docstring:
 	>>> mod1 = __import__("7-base_geometry").BaseGeometry.integer_validator.__doc__
 	>>> len(mod1) > 1
 	True
+checking for area failurea:
+	>>> b = BaseGeometry()
+	>>> b.area()
+	Traceback (most recent call last):
+	...
+	Exception: area() is not implemented
+
+checking for integer validator:
+	>>> b = BaseGeometry()
+	>>> b.integer_validator("integer", 1)
+
+checking for value not int:
+	>>> b.integer_validator("integer", 7.1)
+	Traceback (most recent call last):
+	...
+	TypeError: integer must be an integer
+
+checking for value = 0:
+	 
