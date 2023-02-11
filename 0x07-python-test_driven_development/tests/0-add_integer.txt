@@ -24,3 +24,19 @@ checking the function:
 checking positive with negative:
 	>>> add_integer(2, -4)
 	-2
+
+checking negative with negative:
+	>>> add_integer(-2, -3)
+	-5
+
+checking string and integer:
+	>>> add_integer("string", 3)
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+checking dic and integer:
+	>>> add_integer({'age': 12}, 12)
+	Traceback (most recent call last)
+	...
+	TypeError: a must be an integer
