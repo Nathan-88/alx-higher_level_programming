@@ -11,7 +11,8 @@ checking for module doctring:
 	>>> m = __import__("0-add_integer").__doc__
 	>>> len(m) > 1
 	True
+
 Checking for function docstring:
 	>>> f = __import__("0-add_integer").add_integer.__doc__
-        >>> len(f) > 1
-        True
+	>>> len(f) > 1
+	True
