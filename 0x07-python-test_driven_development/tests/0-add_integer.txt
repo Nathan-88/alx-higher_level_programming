@@ -16,3 +16,11 @@ Checking for function docstring:
 	>>> f = __import__("0-add_integer").add_integer.__doc__
 	>>> len(f) > 1
 	True
+
+checking the function:
+	>>> add_integer(2, 3)
+	5
+
+checking positive with negative:
+	>>> add_integer(2, -4)
+	-2
