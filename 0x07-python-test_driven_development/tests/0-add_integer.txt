@@ -95,4 +95,4 @@ Checking no args:
 	 >>> add_integer()
 	 Traceback (most recent call last):
 	 ...
-	 TypeError: add_integer() missing 2 required positional arguments: 'a' and 'b'
+	 TypeError: add_integer() missing 1 required positional argument: 'a'
