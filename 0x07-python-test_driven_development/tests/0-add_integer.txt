@@ -1,0 +1,17 @@
+The ``0-add_integer`` module
+======================
+
+Using ``add_integer``
+-------------------
+
+Importing the function from the module:
+	>>> add_integer = __import__("0-add_integer").add_integer
+
+checking for module doctring:
+	>>> m = __import__("0-add_integer").__doc__
+	>>> len(m) > 1
+	True
+Checking for function docstring:
+	>>> f = __import__("0-add_integer").add_integer.__doc__
+        >>> len(f) > 1
+        True
