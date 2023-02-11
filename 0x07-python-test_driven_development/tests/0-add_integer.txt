@@ -90,3 +90,9 @@ Checking number with bool:
          Traceback (most recent call last):
          ...
          TypeError: b must be an integer
+
+Checking no args:
+	 >>> add_integer()
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: add_integer() missing 2 required positional arguments: 'a' and 'b'
