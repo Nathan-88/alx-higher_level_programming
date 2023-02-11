@@ -69,3 +69,4 @@ class Rectangle:
     def __del__(self):
         """runs when object is deleted"""
         print("Bye rectangle...")
+
