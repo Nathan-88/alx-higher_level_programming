@@ -9,6 +9,9 @@ def matrix_divided(matrix, div):
     """
     a function dives all elements in a matrix by div
     """
+    if type(matrix) is not list:
+        raise TypeError(
+            "matrix must be a matrix (list of lists) of integers/floats")
     if not all(isinstance(row, list) for row in matrix):
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     if not all(isinstance(element, (int, float)) for row in matrix for element in row):
