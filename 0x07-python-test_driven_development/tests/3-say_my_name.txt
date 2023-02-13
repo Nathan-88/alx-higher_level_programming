@@ -41,6 +41,11 @@ checking for input that is not string:
 	TypeError: first_name must be a string
 
 checking for input that is not string:
-	>>> say_my_name(True, [2,3])
+	>>> say_my_name((23, 4), [2,3])
 	Traceback (most recent call last):
 	TypeError: first_name must be a string
+
+ checking for input that is not string:
+	>>> say_my_name()
+	Traceback (most recent call last)
+	TypeError: say_my_name() missing 1 required positional argument: 'first_name'
