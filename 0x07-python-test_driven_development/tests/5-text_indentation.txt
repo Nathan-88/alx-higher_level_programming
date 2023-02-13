@@ -55,3 +55,12 @@ Checking for too many args:
 	>>> text_indentation("Hello", "Hi")
 	Traceback (most recent call last):
 	TypeError: text_indentation() takes 1 positional argument but 2 were given
+
+Checking for standalone special chars:
+	>>> text_indentation(" . ? : ")
+	.
+	<BLANKLINE>
+	?
+	<BLANKLINE>
+	:
+	<BLANKLINE>
