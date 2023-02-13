@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """ a function that prints
 My name is <first name> <last name>
+first_name and last_name must be strings
+import isn't allowed
 """
 
 
