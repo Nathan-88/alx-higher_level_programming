@@ -44,3 +44,8 @@ checking for input that is not string:
 	>>> say_my_name((23, 4), [2,3])
 	Traceback (most recent call last):
 	TypeError: first_name must be a string
+
+checking for input that is not string:
+	>>> say_my_name("gen", None)
+	Traceback (most recent call last):
+	TypeError: last_name must be a string
