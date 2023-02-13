@@ -43,3 +43,16 @@ testing for equal length of list of lists:
 >>> matrix_divided([[2, 3], [2, 3, 4]], 3)
 Traceback (most recent call last):
 TypeError: Each row of the matrix must have the same size
+
+testing for True as a div argument
+::
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+>>> matrix_divided([[1, 2, 3], [4, 5, 8]], True)
+[[1.0, 2.0, 3.0], [4.0, 5.0, 8.0]]
+
+testing for div as a none(int or float):
+::
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+>>> matrix_divided([[1, 2, 3], [4, 5, 8]], "john")
+Traceback (most recent call last):
+TypeError: div must be a number
