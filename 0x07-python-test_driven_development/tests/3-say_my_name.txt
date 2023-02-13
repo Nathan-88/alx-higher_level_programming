@@ -46,6 +46,10 @@ checking for input that is not string:
 	TypeError: first_name must be a string
 
 checking for input that is not string:
-	>>> say_my_name("gen", None)
+	>>> say_my_name(None, None)
 	Traceback (most recent call last):
-	TypeError: last_name must be a string
+	TypeError: first_name must be a string
+
+checking for both empty args:
+	>>> say_my_name("", "")
+	My name is  
