@@ -48,3 +48,8 @@ checking for boolean datatype:
 	>>> print_square(True)
 	Traceback (most recent call last):
 	TypeError: size must be an integer
+
+Checking for too many args
+	>>> print_square(1, 2)
+	Traceback (most recent call last):
+	TypeError: print_square() takes 1 positional argument but 2 were given
