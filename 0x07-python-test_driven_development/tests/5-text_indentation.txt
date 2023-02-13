@@ -38,3 +38,12 @@ testing for int as argument:
 	>>> text_indentation([1,2,3])
 	Traceback (most recent call last):
 	TypeError: text must be a string
+	>>> text_indentation((1,2,3))
+	Traceback (most recent call last):
+	TypeError: text must be a string
+	>>> text_indentation(True)
+	Traceback (most recent call last):
+	TypeError: text must be a string
+	>>> text_indentation(1)
+	Traceback (most recent call last):
+	TypeError: text must be a string
