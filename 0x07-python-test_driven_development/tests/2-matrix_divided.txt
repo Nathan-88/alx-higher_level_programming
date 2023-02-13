@@ -17,12 +17,6 @@ Checking for function docstring:
 	>>> len(f) > 1
 	True
 
-checking for str and int:
-	>>> matrix_divided("john", 3)
-	Traceback (most recent call last):
-	...
-	TypeError: 'str' object is not callable
-
 testing function with scalar division with single digit div
 ::
 >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
@@ -35,3 +29,17 @@ testing how function handles division by 0
 >>> matrix_divided([[1, 2, 3], [5, 6, 7]], 0)
 Traceback (most recent call last):
 ZeroDivisionError: division by zero
+
+testing how function handles wrong aguments
+::
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+>>> matrix_divided(([2,3],[2,3,4]), 3)
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+testing for equal length of list of lists:
+::
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+>>> matrix_divided([[2, 3], [2, 3, 4]], 3)
+Traceback (most recent call last):
+TypeError: Each row of the matrix must have the same size
