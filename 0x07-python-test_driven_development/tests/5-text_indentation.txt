@@ -47,3 +47,11 @@ testing for int as argument:
 	>>> text_indentation(1)
 	Traceback (most recent call last):
 	TypeError: text must be a string
+	>>> text_indentation(None)
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+Checking for too many args:
+	>>> text_indentation("Hello", "Hi")
+	Traceback (most recent call last):
+	TypeError: text_indentation() takes 1 positional argument but 2 were given
