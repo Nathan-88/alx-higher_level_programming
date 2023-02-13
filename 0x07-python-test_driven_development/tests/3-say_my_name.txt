@@ -16,3 +16,21 @@ Checking for function docstring:
 	>>> f = __import__('3-say_my_name').say_my_name.__doc__
 	>>> len(f) > 1
 	True
+
+checking for correct output:
+	>>> say_my_name("John", "Smith")
+	My name is John Smith
+
+checking for input that is not string:
+	>>> say_my_name(True, "Smith")
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+checking for second input not string:
+	>>> say_my_name("string", 3)
+	Traceback (most recent call last):
+	TypeError: last_name must be a string
+
+checking for empty args:
+	>>> say_my_name("John")
+	My name is John 
