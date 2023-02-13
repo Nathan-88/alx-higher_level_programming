@@ -51,5 +51,5 @@ checking for input that is not string:
 	TypeError: first_name must be a string
 
 checking for both empty args:
-	>>> say_my_name("", "")
+	>>> say_my_name("")
 	My name is  
