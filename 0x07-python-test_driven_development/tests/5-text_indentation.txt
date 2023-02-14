@@ -19,7 +19,7 @@ Checking for function docstring:
 
 checking for correct output:
 	>>> text_indentation("john: is a good boy. is'nt he?")
-	ohn:
+	john:
 	<BLANKLINE>
 	is a good boy.
 	<BLANKLINE>
