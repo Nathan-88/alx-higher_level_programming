@@ -7,5 +7,5 @@ for JSON serialization of an object:
 
 
 def class_to_json(obj):
-    """return dict of obj"""
+    """defines the function"""
     return obj.__dict__
