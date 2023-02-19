@@ -23,3 +23,13 @@ class Student():
                         if i in self.__dict__:
                             diction.update({i: self.__dict__[i]})
             return diction
+
+    def reload_from_json(self, json):
+        """ that replaces all attributes of the Student instance
+        """
+        if isinstance(json, dict):
+            new = self.__dict__
+            for k in new.keys():
+                if k in json:
+                    new.update({k: json[k]})
+            return new
