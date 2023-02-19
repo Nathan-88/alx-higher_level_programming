@@ -1,4 +1,12 @@
 #!/usr/bin/python3
+""" a simple implementation of a serialization
+and deserialization mechanism
+(concept of representation of an object to another format
+without losing any information
+and allow us to rebuild an object based on this representation)
+"""
+
+
 class Student():
     """defines a class of student
     """
@@ -27,6 +35,8 @@ class Student():
     def reload_from_json(self, json):
         """ that replaces all attributes of the Student instance
         """
-            for k, v in json.items():
-                if hasattr(self, k):
-                    setattr(self, k, v)
+        if isinstance(json, dict):
+            for k in self.__dict__.keys():
+                if k in json:
+                    self.__dict__.update({k: json[k]})
+            return self.__dict__
