@@ -28,8 +28,6 @@ class Student():
         """ that replaces all attributes of the Student instance
         """
         if isinstance(json, dict):
-            new = self.__dict__
-            for k in new.keys():
-                if k in json:
-                    new.update({k: json[k]})
-            return new
+            for k, v in json.items():
+                if hasattr(self, k):
+                    setattr(self, k, v)
