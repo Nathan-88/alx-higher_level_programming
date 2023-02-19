@@ -34,6 +34,7 @@ class Student():
 
     def reload_from_json(self, json):
         """ that replaces all attributes of the Student instance
+        if json is a type of dict
         """
         if isinstance(json, dict):
             for k in self.__dict__.keys():
