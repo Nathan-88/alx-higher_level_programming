@@ -13,7 +13,7 @@ def matrix_mul(m_a, m_b):
         raise TypeError("m_b must be a list")
     if not all(isinstance(m_a[i], list) for i in range(len(m_a))):
         raise TypeError("m_a must be a list of lists")
-    if not all(isinstance(m_a[i], list) for i in range(len(m_a))):
+    if not all(isinstance(m_b[i], list) for i in range(len(m_b))):
         raise TypeError("m_b must be a list of lists")
     if m_a == [] or m_a == [[]]:
         raise ValueError("m_a can't be empty")
