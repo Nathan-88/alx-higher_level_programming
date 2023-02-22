@@ -4,6 +4,7 @@ inherits from Base:
 """
 from models.base import Base
 
+
 class Rectangle(Base):
     """defines a class rectangle"""
 
