@@ -44,14 +44,10 @@ class Square(Rectangle):
         self.x = args[2] if len(args) >= 3 else self.x
         self.y = args[3] if len(args) >= 4 else self.y
 
-        for keyz, valz in kwargs.items():
-            setattr(self, keyz, valz)
+        for key, value in kwargs.items():
+            setattr(self, key, value)
 
     def to_dictionary(self):
         """returns dictionary representation of square (it's attributes)"""
-        return {
-            "id": self.id,
-            "size": self.size,
-            "x": self.x,
-            "y": self.y
-        } 
+        return {"id": self.id, "size": self.size,
+                "x": self.x, "y": self.y}
