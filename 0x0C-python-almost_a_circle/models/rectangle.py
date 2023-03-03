@@ -104,3 +104,13 @@ class Rectangle(Base):
             self.height = args[2] if len(args) >= 3 else self.height
             self.x = args[3] if len(args) >= 4 else self.x
             self.__y = args[4] if len(args) >= 5 else self.y
+
+	def to_dictionary(self):
+        """returns dictionary representation of rectangle (it's attributes)"""
+        return {
+            "id": self.id,
+            "width": self.width,
+            "height": self.height,
+            "x": self.x,
+            "y": self.y
+        }
