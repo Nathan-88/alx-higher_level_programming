@@ -80,7 +80,11 @@ class Rectangle(Base):
         """that prints in stdout
         the Rectangle instance with the character #
         """
-        print("\n".join("#" * self.__width for i in range(self.__height)))
+		[print("") for y in range(self.y)]
+        for h in range(self.height):
+            [print(" ", end="") for x in range(self.x)]
+            [print("#", end="") for w in range(self.width)]
+            print("")
 
     def __str__(self):
         """defines the string representation of rectangle"""
