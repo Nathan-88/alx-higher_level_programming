@@ -34,3 +34,24 @@ class Square(Rectangle):
     def __str__(self):
         return "[Square] ({}) {}/{} - {}"\
             .format(self.id, self.x, self.y, self.size)
+
+    def update(self, *args, **kwargs):
+        """info about this method() is documented in the superclass
+        update method()
+        """
+        self.id = args[0] if len(args) >= 1 else self.id
+        self.size = args[1] if len(args) >= 2 else self.size
+        self.x = args[2] if len(args) >= 3 else self.x
+        self.y = args[3] if len(args) >= 4 else self.y
+
+        for keyz, valz in kwargs.items():
+            setattr(self, keyz, valz)
+
+    def to_dictionary(self):
+        """returns dictionary representation of square (it's attributes)"""
+        return {
+            "id": self.id,
+            "size": self.size,
+            "x": self.x,
+            "y": self.y
+        } 
