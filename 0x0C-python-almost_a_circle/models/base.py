@@ -41,6 +41,8 @@ class Base:
         to_dictionary converts to a dict and stores in a list
         """
         with open(cls.__name__ + ".json", "w", encoding="utf-8") as file:
-            if list_objs:
+            if list_objs is None:
+                file.write("[]")
+            else:
                 list_dicts = [o.to_dictionary() for o in list_objs]
-            file.write(cls.to_json_string(list_dicts))
+                file.write(cls.to_json_string(list_dicts))
