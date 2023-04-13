@@ -6,10 +6,9 @@
 //  You are not allowed to use var
 const args = process.argv;
 if (args.length === 3 && !isNaN(args[2])) {
-    for (let i = 0; i < parseInt(args[2]); i++) {
-        console.log('C is fun');
-    }
-    }
-else {
-    console.log('Missing number of occurrences');
+  for (let i = 0; i < parseInt(args[2]); i++) {
+    console.log('C is fun');
+  }
+} else {
+  console.log('Missing number of occurrences');
 }
