@@ -10,5 +10,3 @@ if (args[2] === undefined) {
 } else {
   console.log(args[2]);
 }
-
-// console.log(typeof process.argv[2] === 'undefined' ? 'No argument' : process.argv[2]);
