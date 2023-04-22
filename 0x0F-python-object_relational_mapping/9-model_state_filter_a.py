@@ -6,7 +6,7 @@ Your script should take 3 arguments: mysql username, mysql password and
 database name
 Results must be sorted in ascending order by states.id
 You must use the module SQLAlchemy
-You must import State and Base from model_state - from model_state 
+You must import State and Base from model_state - from model_state
 import Base, State
 """
 from model_state import Base, State
@@ -26,4 +26,3 @@ if __name__ == "__main__":
         if 'a' in state.name:
             print("{}: {}".format(state.id, state.name))
     session.close()
-
