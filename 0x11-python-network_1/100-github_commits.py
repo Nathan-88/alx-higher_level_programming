@@ -21,4 +21,4 @@ if __name__ == '__main__':
                                   json[i].get('commit').get('author').
                                   get('name')))
     except ValueError:
-        print("None")
+        pass
