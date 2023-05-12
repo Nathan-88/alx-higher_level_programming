@@ -16,6 +16,7 @@ You don't need to check arguments passed to the script (number or type)
 import requests
 import sys
 
+
 if __name__ == "__main__":
     url = 'https://api.github.com/user'
     username = sys.argv[1]
