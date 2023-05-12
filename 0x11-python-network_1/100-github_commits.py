@@ -20,5 +20,5 @@ if __name__ == '__main__':
             print("{}: {}".format(json[i].get('sha'),
                                   json[i].get('commit').get('author').
                                   get('name')))
-    except ValueError:
+    except IndexError:
         pass
