@@ -2,7 +2,7 @@
 // a script that computes and prints a factorial
 
 function factorial (num) {
-  if (isNaN(num) === NaN || num === 1) {
+  if (isNaN(num) || num === 1) {
     return 1;
   }
   return num * factorial(num - 1);
