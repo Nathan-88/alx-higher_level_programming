@@ -12,5 +12,5 @@ const textA = fs.readFileSync(fileA, 'utf8');
 
 const textB = fs.readFileSync(fileB, 'utf8');
 
-const newText = `${textA}\n${textB}`;
+const newText = `${textA}${textB}`;
 fs.writeFileSync(fileC, newText);
