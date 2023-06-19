@@ -9,7 +9,9 @@ if __name__ == '__main__':
                          user=sys.argv[1], password=sys.argv[2],
                          database=sys.argv[3])
     c = db.cursor()
-    c.execute("""SELECT * FROM states WHERE name LIKE BINARY 'N%'""")
+    c.execute(
+        """SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER
+        BY states.id""")
     rows = c.fetchall()
     for row in rows:
         print(row)
