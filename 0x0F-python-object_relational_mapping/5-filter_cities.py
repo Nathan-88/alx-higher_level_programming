@@ -16,11 +16,14 @@ if __name__ == "__main__":
         database=sys.argv[3]
     )
     c = db.cursor()
-    c.execute(
-        "SELECT c.name FROM `cities` c JOIN `states` s ON c.state_id = s.id WHERE s.name = '{}' ORDER BY c.id".format(sys.argv[4]))
+    query = ("""SELECT c.name FROM `cities` c JOIN `states` s ON
+    c.state_id = s.id WHERE s.name = %s ORDER BY c.id ASC""")
+    c.execute(query, (sys.argv[4],))
     result = c.fetchall()
-    for rows in range(len(result)):
-        print(result[rows][0], end="")
-        if rows < len(result) - 1:
+    for row in result:
+        print(row[0], end="")
+        if row != result[-1]:
             print(", ", end="")
     print()
+    c.close()
+    db.close()
