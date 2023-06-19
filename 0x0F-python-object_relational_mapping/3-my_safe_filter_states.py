@@ -20,12 +20,14 @@ if __name__ == "__main__":
     )
 
     c = db.cursor()
+
     query = "SELECT * FROM states WHERE name = %s ORDER BY id ASC"
     params = (sys.argv[4],)
     c.execute(query, params)
+
     result = c.fetchall()
-    for rows in result:
-        print(rows)
+    for row in result:
+        print(row)
 
     c.close()
     db.close()
