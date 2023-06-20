@@ -16,6 +16,6 @@ if __name__ == "__main__":
     dbsession = Session()
     result = dbsession.query(State).filter(State.id == 2).first()
     if result:
-        result.name = "New Maxico"
+        result.name = "New Mexico"
         dbsession.commit()
     dbsession.close()
