@@ -8,6 +8,7 @@ Wedge Antilles is character ID 18 - your script must use this ID for filtering t
 const request = require('request');
 
 const url = process.argv[2];
+const characterId = '18';
 let count = 0;
 
 request.get(url, (err, response, body) => {
@@ -21,7 +22,7 @@ request.get(url, (err, response, body) => {
     for (let i = 0; i < val1len; i++) {
       const valCharlen = val1[i].characters.length;
       for (let j = 0; j < valCharlen; j++) {
-        if (val1[i].characters[j] === 'https://swapi-api.alx-tools.com/api/people/18/') {
+        if (val1[i].characters[j].includes(characterId)) {
           count += 1;
         }
       }
