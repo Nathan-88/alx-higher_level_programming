@@ -8,8 +8,7 @@
  * Your script must work when it is imported from the <head> tag
  */
 $(document).ready(function() {
-      $.getJSON('https://fourtonfish.com/hellosalut/?lang=fr', function(data) {
-        var translation = data.hello;
-        $('#hello').text(translation);
-      });
-    });
+	$.get("https://hellosalut.stefanbohacek.dev/?lang=fr", function (data) {
+		$("DIV#hello").text(data.hello);
+	});
+});
